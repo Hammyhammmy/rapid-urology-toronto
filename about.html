@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us &mdash; Rapid Urology Toronto, St. Joseph&rsquo;s Health Centre</title>
+  <meta name="description" content="Meet the urologists at Rapid Urology Toronto. An extension of St. Joseph's Health Centre Urology Department, providing expedited assessment and specialized care.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { brand: { 50:'#eff6ff',100:'#dbeafe',200:'#bfdbfe',300:'#93c5fd',400:'#60a5fa',600:'#2563eb',700:'#1d4ed8',800:'#1e40af',900:'#1e3a8a' }}}}
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Georgia, 'Times New Roman', serif; }
+    h1, h2, h3, h4, nav, .nav-link, .label-text { font-family: system-ui, -apple-system, sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+  <nav class="bg-white/95 backdrop-blur border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-3 md:px-4 py-2 md:py-3 flex flex-wrap items-center justify-between gap-1 md:gap-2">
+      <a href="index.html" class="text-brand-700 font-bold text-base md:text-lg tracking-tight">Rapid Urology Toronto</a>
+      <div class="flex flex-wrap gap-x-3 md:gap-x-5 gap-y-0.5 text-xs md:text-sm text-gray-500">
+        <a href="index.html" class="nav-link hover:text-brand-700 transition-colors">Clinic</a>
+        <a href="about.html" class="nav-link text-brand-700 font-medium">About</a>
+        <a href="referrals.html" class="nav-link hover:text-brand-700 transition-colors">Refer</a>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-brand-800 text-brand-200 text-xs py-1.5 text-center tracking-wide" style="font-family: system-ui, -apple-system, sans-serif;">Rapid Cancer Diagnosis Clinic</div>
+
+  <header class="bg-brand-800 text-white">
+    <div class="max-w-4xl mx-auto px-4 py-8 md:py-16">
+      <h1 class="text-2xl md:text-3xl font-bold tracking-tight mb-2">About Us</h1>
+      <p class="text-brand-200 text-sm md:text-base">An extension of <span data-clinic="hospitalAffiliation">Loading&hellip;</span> Urology Department</p>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-8 md:py-16 space-y-8 md:space-y-14">
+
+    <section>
+      <h2 class="text-xl md:text-2xl font-bold text-brand-800 mb-3 md:mb-4">Our Clinic</h2>
+      <div class="space-y-3 text-gray-700 text-sm md:text-base leading-relaxed">
+        <p>We are an extension of the <strong>St. Joseph&rsquo;s Health Centre Urology Department</strong>, dedicated to providing expedited assessment and specialized care for urological concerns. Our clinic focuses on rapid diagnostic pathways to minimize wait times and ensure timely access to expert urological care.</p>
+        <p>Our team of experienced urologists brings together expertise in prostate health, kidney conditions, urinary tract issues, and urological oncology. We are committed to providing patient-centred care with a focus on clear communication, evidence-based treatment, and streamlined pathways to diagnosis and treatment.</p>
+      </div>
+    </section>
+
+    <div class="flex items-center" aria-hidden="true">
+      <div class="h-px flex-1 bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div>
+    </div>
+
+    <section>
+      <h2 class="text-xl md:text-2xl font-bold text-brand-800 mb-4 md:mb-6">Our Urologists</h2>
+      <p class="text-gray-700 text-sm md:text-base leading-relaxed mb-6">Our clinic features experienced urologists from St. Joseph&rsquo;s Health Centre, each bringing specialized expertise to provide comprehensive urological care.</p>
+      <div id="urologists-grid" class="grid md:grid-cols-2 gap-4 md:gap-6">
+        <p class="text-gray-500 text-sm">Loading urologist information&hellip;</p>
+      </div>
+    </section>
+
+    <div class="flex items-center" aria-hidden="true">
+      <div class="h-px flex-1 bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div>
+    </div>
+
+    <section>
+      <div class="bg-brand-50 border border-brand-200 rounded-lg p-5 md:p-6">
+        <h2 class="text-lg font-bold text-brand-800 mb-2">Our Mission</h2>
+        <p class="text-gray-700 text-sm md:text-base leading-relaxed">To provide rapid, expert urological assessment and care, reducing wait times and ensuring patients receive timely access to the specialized care they need. We combine the expertise of a major hospital urology department with the efficiency and focus of a specialized rapid assessment clinic.</p>
+      </div>
+    </section>
+
+    <div class="flex items-center" aria-hidden="true">
+      <div class="h-px flex-1 bg-gradient-to-r from-transparent via-brand-200 to-transparent"></div>
+    </div>
+
+    <section>
+      <div class="bg-gray-50 border border-gray-200 rounded-lg p-5 md:p-6 text-center">
+        <h2 class="text-lg font-bold text-gray-800 mb-2">Referrals</h2>
+        <p class="text-gray-700 text-sm md:text-base leading-relaxed mb-3">Referrals are accepted from family physicians and nurse practitioners via fax at <strong><span data-clinic="fax">Loading&hellip;</span></strong> or email to <a href="#" data-clinic="email" class="text-brand-700 underline underline-offset-2">Loading&hellip;</a>.</p>
+        <a href="referrals.html" class="text-brand-700 text-sm font-medium underline underline-offset-2 hover:text-brand-900">Referral details &amp; urgent cases &rarr;</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-brand-900 text-brand-200">
+    <div class="max-w-3xl mx-auto px-4 py-6 md:py-8 text-center text-sm">
+      <p class="mb-2"><span data-clinic="hospitalAffiliation">Loading&hellip;</span>&ensp;|&ensp;<span data-clinic="address">Loading&hellip;</span>&ensp;|&ensp;<a href="#" data-clinic="phone" class="underline underline-offset-2 hover:text-white">Loading&hellip;</a></p>
+      <p class="text-brand-400">Fax: <span data-clinic="fax">Loading&hellip;</span>&ensp;|&ensp;<a href="#" data-clinic="email" class="underline underline-offset-2 hover:text-white">Loading&hellip;</a></p>
+    </div>
+  </footer>
+
+  <script src="site.js"></script>
+</body>
+</html>

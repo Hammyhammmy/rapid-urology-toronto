@@ -1,0 +1,32 @@
+{
+  "urologists": [
+    {
+      "name": "Dr. Ashis Chawla",
+      "title": "Staff Urologist",
+      "credentials": "Diplomat of the American Board of Urology, Fellow of the Royal College of Physicians and Surgeons of Canada",
+      "specialization": "Minimally Invasive Surgery, Benign and Malignant Urological Conditions",
+      "bio": "Dr. Chawla is Staff Urologist at St. Joseph\u2019s Health Centre and Cleveland Clinic Canada, as well as an Associate Urologist at Toronto Rehabilitation Centre and Lecturer in the Department of Surgery at the University of Toronto. His practice focuses on treating both benign and malignant urological conditions with a special interest in minimally invasive surgery."
+    },
+    {
+      "name": "Dr. Umesh Jain",
+      "title": "Staff Urologist",
+      "credentials": "",
+      "specialization": "Uro-Oncology, Endourology, General Urology",
+      "bio": "Dr. Jain\u2019s practice includes general urology with special interest in uro-oncology and endourology. He has been actively involved in teaching undergraduate medical students, urology residents, and clinical fellows, and has won the Outstanding Teacher Award in the Division of Urology on numerous occasions."
+    },
+    {
+      "name": "Dr. Anthony McLean",
+      "title": "Staff Urologist",
+      "credentials": "",
+      "specialization": "General Urology",
+      "bio": "Dr. McLean is a Staff Urologist at St. Joseph\u2019s Health Centre, providing comprehensive urological care to patients."
+    },
+    {
+      "name": "Dr. Hanmu Yan",
+      "title": "Staff Urologist, Assistant Professor of Surgery",
+      "credentials": "",
+      "specialization": "Minimally Invasive Urologic Surgery, BPH, Kidney Stones, Urinary Tract Cancers",
+      "bio": "Dr. Yan is a Staff Urologist at St. Joseph\u2019s Health Centre and an Assistant Professor of Surgery at the University of Toronto. He completed medical school and residency at the University of Toronto, with specialized training in minimally invasive urologic surgery. His practice focuses on surgeries for BPH, kidney stones, and cancers of the urinary tract."
+    }
+  ]
+}
