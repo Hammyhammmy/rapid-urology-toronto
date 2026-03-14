@@ -22,9 +22,19 @@
       .then(function (r) { return r.json(); })
       .then(function (data) {
         grid.innerHTML = data.urologists.map(function (doc) {
-          var html = '<div class="border border-gray-200 rounded-lg p-4 md:p-6 hover:border-brand-300 transition-colors">';
-          html += '<h3 class="text-base md:text-lg font-bold text-gray-800 mb-1" style="font-family:system-ui,-apple-system,sans-serif;">' + escapeHtml(doc.name) + '</h3>';
-          html += '<p class="text-brand-700 text-sm font-medium mb-1">' + escapeHtml(doc.title) + '</p>';
+          // Get initials for avatar
+          var initials = doc.name.replace(/^Dr\.\s*/, '').split(' ').map(function (w) { return w[0]; }).join('');
+          var html = '<div class="border border-gray-200 rounded-lg p-4 md:p-6 hover:border-brand-300 hover:shadow-sm transition-all">';
+          html += '<div class="flex items-center gap-3 mb-3">';
+          if (doc.image) {
+            html += '<img src="' + escapeHtml(doc.image) + '" alt="' + escapeHtml(doc.name) + '" class="w-14 h-14 rounded-full object-cover shrink-0"/>';
+          } else {
+            html += '<div class="w-14 h-14 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-lg font-bold shrink-0" style="font-family:system-ui,-apple-system,sans-serif;">' + escapeHtml(initials) + '</div>';
+          }
+          html += '<div>';
+          html += '<h3 class="text-base md:text-lg font-bold text-gray-800" style="font-family:system-ui,-apple-system,sans-serif;">' + escapeHtml(doc.name) + '</h3>';
+          html += '<p class="text-brand-700 text-sm font-medium">' + escapeHtml(doc.title) + '</p>';
+          html += '</div></div>';
           if (doc.credentials) {
             html += '<p class="text-xs text-gray-500 mb-2">' + escapeHtml(doc.credentials) + '</p>';
           }
